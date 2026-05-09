@@ -2,35 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
-  <title>Mohsin Rizwan - Resilience & Craft | App Developer & Entrepreneur</title>
-  <meta name="description" content="Mohsin Rizwan: From solitude & struggle to creating utility apps like Quotation App and Elite Interior. Web designer, app developer, content writer." />
-  <meta name="keywords" content="Mohsin Rizwan, app developer, Quotation App, Elite Interior, lone wolf journey, no social media, self made" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Mohsin Rizwan - Wikipedia Biography | Developer & Entrepreneur</title>
+  <meta name="description" content="Mohsin Rizwan – Indian app developer, web designer, content writer. Creator of Quotation App & Elite Interior App. Life story of resilience and solitude." />
+  <meta name="keywords" content="Mohsin Rizwan, Wikipedia style biography, app developer, Quotation App, Elite Interior, solitary journey" />
   <meta name="author" content="Mohsin Rizwan" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://mohsinrizwan.dev/" />
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Mohsin Rizwan | Solitary Journey of a App Creator" />
-  <meta property="og:description" content="From life's hardships to building Quotation App & Elite Interior. No girlfriend, no marriage — just code and persistence." />
+  <meta property="og:title" content="Mohsin Rizwan – Wikipedia-style Biography" />
+  <meta property="og:description" content="The life, struggles and creations of Mohsin Rizwan: Quotation App, Elite Interior, and a journey through solitude." />
   <meta property="og:image" content="https://raw.githubusercontent.com/monichaudharyx-prog/Mohsin/main/Picsart_25-11-17_23-52-27-402.png" />
   <meta property="og:type" content="profile" />
+  <meta property="profile:first_name" content="Mohsin" />
+  <meta property="profile:last_name" content="Rizwan" />
   
-  <!-- Schema Person -->
+  <!-- Schema.org Person -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Mohsin Rizwan",
     "birthDate": "1995-06-15",
+    "birthPlace": {"@type": "Place", "address": {"@type": "PostalAddress", "addressLocality": "Uttar Pradesh", "addressCountry": "India"}},
     "jobTitle": "App Developer & Web Designer",
-    "knowsAbout": ["App Development", "Quotation Software", "Interior Design Tools", "Content Writing"],
+    "worksFor": {"@type": "Organization", "name": "Alzam Ecommerce Pvt Ltd"},
     "url": "https://mohsinrizwan.dev",
-    "image": "https://raw.githubusercontent.com/monichaudharyx-prog/Mohsin/main/Picsart_25-11-17_23-52-27-402.png"
+    "image": "https://raw.githubusercontent.com/monichaudharyx-prog/Mohsin/main/Picsart_25-11-17_23-52-27-402.png",
+    "sameAs": []
   }
   </script>
   
   <style>
+    /* WIKIPEDIA BASE STYLES - FULLY RESPONSIVE */
     * {
       margin: 0;
       padding: 0;
@@ -38,329 +43,368 @@
     }
     
     body {
-      font-family: 'Segoe UI', 'Georgia', 'Times New Roman', serif;
-      background: #eef2f6;
-      color: #1f2d3d;
+      font-family: 'Georgia', 'Times New Roman', 'Segoe UI', serif;
+      background: #f6f6f6;
+      color: #202122;
       line-height: 1.5;
-      padding: 16px;
+      padding: 1.25rem;
     }
     
-    .wikipedia-container {
-      max-width: 1200px;
+    /* Wikipedia container */
+    .wikipedia-wrapper {
+      max-width: 1220px;
       margin: 0 auto;
       background: #ffffff;
-      border: 1px solid #cbd5e0;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      border: 1px solid #a7d7f0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
     
-    .header-strip {
-      background: #f0f4f8;
-      border-bottom: 1px solid #cbd5e0;
-      padding: 14px 20px;
-      font-size: 13px;
+    /* Header tabs (Wikipedia style) */
+    .wiki-header {
+      background: #f8f9fa;
+      border-bottom: 1px solid #a7d7f0;
+      padding: 0.5rem 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 0.8rem;
+    }
+    .wiki-logo {
+      font-weight: bold;
       font-family: monospace;
     }
     
-    .content-wrapper {
+    /* MAIN FLEX LAYOUT */
+    .wiki-content {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: row;
+      gap: 1.5rem;
+      padding: 1.5rem 1.8rem;
     }
     
-    /* INFOBOX - IMAGE FIXED FOR FACE VISIBILITY */
+    /* ========== INFOBOX (RIGHT SIDEBAR) ========== */
     .infobox {
       float: right;
       width: 280px;
-      background: #fafcfd;
-      border: 1px solid #cbd5e1;
-      border-radius: 12px;
-      margin: 20px 24px 20px 24px;
-      padding: 14px;
-      font-size: 14px;
+      background: #f9f9f9;
+      border: 1px solid #c8ccd1;
+      border-collapse: collapse;
+      margin: 0 0 1.2rem 1.8rem;
+      padding: 0.8rem;
+      font-size: 0.85rem;
+      clear: right;
       flex-shrink: 0;
     }
     
     .infobox h3 {
-      background: #eef2f8;
+      background: #eaecf0;
       text-align: center;
-      padding: 10px;
-      margin: -14px -14px 14px -14px;
-      border-radius: 12px 12px 0 0;
-      font-size: 20px;
-      border-bottom: 1px solid #cbd5e1;
+      padding: 0.6rem;
+      margin: -0.8rem -0.8rem 0.8rem -0.8rem;
+      font-size: 1.2rem;
+      border-bottom: 1px solid #c8ccd1;
+      font-family: 'Georgia', serif;
     }
     
-    /* CRITICAL FIX: Image face visible on mobile */
-    .infobox img {
+    /* PROFILE IMAGE - DIFFERENT CROPPING FOR MOBILE VS DESKTOP but same image */
+    .infobox-img {
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+    .infobox-img img {
       width: 100%;
-      max-width: 220px;
-      border-radius: 50%;
-      margin: 0 auto 15px;
+      max-width: 240px;
+      border-radius: 6px;
       display: block;
-      border: 3px solid #cbd5e1;
-      object-fit: cover;
-      object-position: center 20%;
-      aspect-ratio: 1 / 1;
+      margin: 0 auto;
       background: #f0f2f5;
+    }
+    
+    /* Desktop/tablet: full face visible, natural */
+    @media (min-width: 769px) {
+      .infobox-img img {
+        object-fit: contain;
+        object-position: center top;
+        max-height: 280px;
+        width: auto;
+      }
+    }
+    
+    /* Mobile: ensure face is clearly visible (center on eyes) */
+    @media (max-width: 768px) {
+      .infobox-img img {
+        object-fit: cover;
+        object-position: 50% 28%;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 2px solid #c8ccd1;
+      }
+      .infobox {
+        width: 96%;
+        float: none;
+        margin: 0 auto 1.5rem auto;
+      }
     }
     
     .infobox table {
       width: 100%;
     }
-    
     .infobox th {
       text-align: left;
-      font-weight: 700;
-      padding: 7px 5px;
+      font-weight: bold;
+      padding: 0.4rem 0.3rem;
+      background: #f0f2f5;
       width: 38%;
     }
-    
     .infobox td {
-      padding: 7px 5px;
+      padding: 0.4rem 0.3rem;
     }
     
+    /* MAIN ARTICLE TEXT */
     .main-article {
       flex: 1;
-      padding: 20px 28px;
-      min-width: 0;
-      overflow-x: auto;
+      min-width: 200px;
     }
     
     h1 {
-      font-size: 1.9rem;
-      border-bottom: 1px solid #cbd5e0;
-      margin-bottom: 16px;
-      padding-bottom: 6px;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 2.2rem;
+      border-bottom: 1px solid #a2a9b1;
+      margin-bottom: 0.8rem;
+      font-weight: normal;
     }
     
     h2 {
+      font-family: 'Georgia', serif;
       font-size: 1.5rem;
-      border-bottom: 1px solid #cbd5e0;
-      margin: 28px 0 14px 0;
-      clear: both;
+      border-bottom: 1px solid #a2a9b1;
+      margin: 1.5rem 0 0.8rem 0;
+      font-weight: normal;
     }
     
+    h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.2rem;
+    }
+    
+    /* Table of Contents */
     .toc {
-      background: #f8fafc;
-      border: 1px solid #cbd5e1;
-      padding: 12px 18px;
-      margin: 18px 0;
-      width: 280px;
+      background: #f8f9fa;
+      border: 1px solid #a2a9b1;
+      padding: 0.8rem 1.2rem;
+      margin: 1rem 0 1.5rem;
       display: inline-block;
-      border-radius: 12px;
+      width: auto;
+      font-size: 0.9rem;
+    }
+    .toc ul {
+      padding-left: 2rem;
     }
     
-    /* only 2 app cards */
-    .projects-grid {
+    /* Download Buttons for only Quotation & Elite Interior */
+    .app-showcase {
       display: flex;
       flex-wrap: wrap;
-      gap: 24px;
-      margin: 25px 0;
-      justify-content: flex-start;
+      gap: 1.8rem;
+      margin: 1.8rem 0;
     }
-    
-    .project-card {
-      background: #fefce8;
-      border-left: 6px solid #1e4a76;
-      padding: 20px 22px;
-      border-radius: 24px;
-      flex: 1 1 280px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.05);
-      transition: 0.2s;
+    .app-card {
+      background: #fef9e6;
+      border-left: 5px solid #2a4b7c;
+      padding: 1.2rem 1.5rem;
+      border-radius: 12px;
+      flex: 1 1 260px;
     }
-    
     .download-btn {
       display: inline-block;
-      background: #1e4a76;
+      background: #2a4b7c;
       color: white;
-      padding: 8px 20px;
-      border-radius: 40px;
       text-decoration: none;
-      font-size: 14px;
-      margin-top: 14px;
-      font-weight: 600;
-      border: none;
+      padding: 0.4rem 1.2rem;
+      border-radius: 24px;
+      font-size: 0.85rem;
+      margin-top: 0.8rem;
+    }
+    
+    /* quotes */
+    .solitude-quote {
+      background: #faf5e8;
+      border-left: 4px solid #b88b2c;
+      padding: 1rem 1.5rem;
+      margin: 1.2rem 0;
+      font-style: italic;
     }
     
     footer {
-      background: #f8fafc;
+      background: #f8f9fa;
+      border-top: 1px solid #a7d7f0;
+      padding: 1rem;
       text-align: center;
-      padding: 18px;
-      font-size: 12px;
-      border-top: 1px solid #cbd5e0;
+      font-size: 0.75rem;
       clear: both;
     }
     
-    /* mobile responsiveness + face image visible */
-    @media (max-width: 780px) {
-      body {
-        padding: 10px;
-      }
-      .content-wrapper {
+    /* Responsive layout tablet & desktop */
+    @media (max-width: 850px) {
+      .wiki-content {
         flex-direction: column;
+        padding: 1rem;
       }
       .infobox {
-        float: none;
-        width: 94%;
-        margin: 16px auto;
-      }
-      .infobox img {
-        max-width: 180px;
-        object-position: center 25%;
-      }
-      .main-article {
-        padding: 16px 18px;
         width: 100%;
+        max-width: 320px;
+        margin: 0 auto 1.5rem;
+        float: none;
       }
       h1 {
-        font-size: 1.7rem;
-      }
-      .toc {
-        width: auto;
-      }
-      .project-card {
-        flex: 1 1 100%;
+        font-size: 1.8rem;
       }
     }
     
-    @media (max-width: 480px) {
-      .main-article {
-        padding: 12px 14px;
+    @media (min-width: 851px) {
+      .infobox {
+        margin-left: 1.8rem;
+        margin-bottom: 0.8rem;
       }
-      .infobox img {
-        max-width: 150px;
+      .infobox-img img {
+        max-width: 100%;
+        border-radius: 4px;
       }
     }
     
-    .journey-text {
-      background: #fef7e0;
-      padding: 18px 22px;
-      border-radius: 24px;
-      margin: 20px 0;
-      border-left: 4px solid #b8860b;
-      font-style: normal;
+    .reference {
+      font-size: 0.8rem;
+      color: #4a5568;
     }
-    
     hr {
-      margin: 20px 0;
+      margin: 1.2rem 0;
     }
   </style>
 </head>
 <body>
-<div class="wikipedia-container">
-  <div class="header-strip">
-    📖 Mohsin Rizwan — The Unwavering Developer • Solitary Journey • Creator of Utility Apps
+<div class="wikipedia-wrapper">
+  <!-- Wikipedia top bar -->
+  <div class="wiki-header">
+    <span class="wiki-logo">📖 Wikipedia-style biography</span>
+    <span>Mohsin Rizwan · Living record</span>
   </div>
   
-  <div class="content-wrapper">
-    <!-- INFOBOX (Image fixed for face) -->
+  <div class="wiki-content">
+    <!-- INFOBOX -->
     <div class="infobox">
       <h3>Mohsin Rizwan</h3>
-      <img src="https://raw.githubusercontent.com/monichaudharyx-prog/Mohsin/main/Picsart_25-11-17_23-52-27-402.png" alt="Mohsin Rizwan profile - face visible" loading="eager" onerror="this.src='https://placehold.co/400x400?text=Mohsin+Rizwan'">
+      <div class="infobox-img">
+        <img src="https://raw.githubusercontent.com/monichaudharyx-prog/Mohsin/main/Picsart_25-11-17_23-52-27-402.png" 
+             alt="Mohsin Rizwan portrait"
+             title="Mohsin Rizwan"
+             loading="eager">
+      </div>
       <table>
         <tr><th>Born</th><td>15 June 1995<br>Uttar Pradesh, India</td></tr>
         <tr><th>Age</th><td>30 years</td></tr>
         <tr><th>Occupation</th><td>App Developer, Web Designer, Content Writer</td></tr>
-        <tr><th>Known ventures</th><td>Alzam Ecommerce (2025), Elite Interior (2026)</td></tr>
-        <tr><th>Parents</th><td>Rizwan Shahid & Munazari Begum</td></tr>
-        <tr><th>Siblings</th><td>Nazim Chaudhary, Amir Chaudhary</td></tr>
+        <tr><th>Known for</th><td>Quotation App, Elite Interior App</td></tr>
+        <tr><th>Parent(s)</th><td>Rizwan Shahid, Munazari Begum</td></tr>
+        <tr><th>Relatives</th><td>Nazim Chaudhary (brother), Amir Chaudhary (brother)</td></tr>
         <tr><th>Education</th><td>IT - Computer Science</td></tr>
-        <tr><th>Relationship</th><td>Unmarried, No girlfriend</td></tr>
-        <tr><th>Life motto</th><td>Created alone, rising from struggles</td></tr>
+        <tr><th>Marital status</th><td>Unmarried · No girlfriend</td></tr>
+        <tr><th>Website</th><td>mohsinrizwan.dev</td></tr>
       </table>
     </div>
     
     <!-- MAIN ARTICLE -->
     <div class="main-article">
-      <h1>Mohsin Rizwan: The Lone Architect</h1>
-      <p><strong>Mohsin Rizwan</strong> is an Indian app developer, web designer, and entrepreneur who transformed isolation into creative fuel. Born on 15 June 1995 in Uttar Pradesh, he walked a path marked by deep personal hardships, loneliness, and silent battles. With no romantic relationships, no marriage, and limited social circles, Mohsin channeled every ounce of pain into building digital tools that simplify lives — most notably the <strong>Quotation App</strong> and the <strong>Elite Interior App</strong>. His story is not merely about coding; it's about survival, resilience, and creating meaning when the world felt empty.</p>
+      <h1>Mohsin Rizwan</h1>
+      <p><strong>Mohsin Rizwan</strong> (born 15 June 1995) is an Indian app developer, web designer, content writer, and entrepreneur. He is the creator of <strong>Quotation App</strong> and <strong>Elite Interior App</strong>, and the founder of Alzam Ecommerce Pvt Ltd (2025) and Elite Interior Parant Company (2026). His life is marked by prolonged solitude, emotional hardship, and a complete absence of romantic relationships — a reality that deeply shaped his work and worldview. Mohsin does not use mainstream social media (no Facebook, Instagram, or Snapchat), preferring only LinkedIn, GitHub, and Telegram for professional communication.</p>
       
       <div class="toc">
-        <strong>📑 In this biography</strong>
+        <strong>Contents</strong> [hide]
         <ul>
-          <li><a href="#solitude">1 The Solitary Journey</a></li>
-          <li><a href="#hardships">2 Hardships & Emotional Battles</a></li>
-          <li><a href="#apps">3 Flagship Apps: Quotation & Elite Interior</a></li>
-          <li><a href="#ventures">4 Entrepreneurship & Ventures</a></li>
-          <li><a href="#writing">5 Writing & Upcoming Drama Series</a></li>
+          <li><a href="#early">1. Early life and family</a></li>
+          <li><a href="#struggles">2. Solitary path and emotional battles</a></li>
+          <li><a href="#apps">3. Notable apps: Quotation & Elite Interior</a></li>
+          <li><a href="#ventures">4. Entrepreneurship ventures</a></li>
+          <li><a href="#writing">5. Writing and upcoming drama series</a></li>
+          <li><a href="#personal">6. Personal ethos and daily life</a></li>
         </ul>
       </div>
       
-      <h2 id="solitude">🕯️ The Solitary Journey: Living Through Isolation</h2>
-      <p>For most of his life, Mohsin experienced profound loneliness. Growing up in a modest household, he found comfort in computers and logic rather than people. He never had a girlfriend, never came close to marriage, and often felt like an outsider even among relatives. School and college years were marked by being overlooked, misunderstood, and fighting anxieties alone. Where others celebrated friendships and love, Mohsin faced empty evenings and the weight of unshared emotions. But instead of breaking, he began coding — first as a distraction, later as a purpose.</p>
+      <h2 id="early">Early life and family</h2>
+      <p>Mohsin was born in Uttar Pradesh, India to Rizwan Shahid and Munazari Begum. He grew up with his elder brother Nazim Chaudhary and younger brother Amir Chaudhary. From a young age, he felt different from his peers — he found comfort in academic subjects, computers, and writing rather than social gatherings. He earned a degree in <strong>IT - Computer Science</strong> but struggled to fit into conventional social structures. While classmates built friendships and relationships, Mohsin experienced deepening isolation. This isolation soon transformed into a driver for self-education in web and app development.</p>
       
-      <div class="journey-text">
-        <strong>✍️ "I lived years without anyone asking how I felt. No relationship, no partner, no hand to hold. But the silence taught me to build. Every app I created is a piece of that solitude turned into something useful."</strong> — Mohsin Rizwan
+      <h2 id="struggles">Solitary path: No girlfriend, no marriage — a life of resilience</h2>
+      <p>Throughout his life, Mohsin has never been in a romantic relationship. He never had a girlfriend, and the prospect of marriage never materialized due to a combination of introversion, life circumstances, and a focus on survival. He watched relatives and peers marry, celebrate engagements, and build families while he stood on the margins: alone, mostly unheard, and often misunderstood. The absence of a partner became a powerful silence — one that he filled with code, literature, and app development.</p>
+      <div class="solitude-quote">
+        <strong>“I spent years without anyone asking how I was. No girlfriend, no marriage, no hand to hold. That loneliness could have destroyed me. Instead, I built apps — for people who needed tools, not sympathy.”</strong><br> — Mohsin Rizwan
       </div>
+      <p>Financial instability, family obligations, and career rejections added layers of hardship. Yet Mohsin refused to break. He taught himself advanced programming, UI/UX design, and content writing, working as a freelancer in the shadows. The lack of a love life never became bitterness; it became a quiet workshop where every utility tool — the Quotation App, the Elite Interior App — was forged from lived experience of building something from nothing.</p>
       
-      <h2 id="hardships">⛰️ Hardships: When Life Tests You Relentlessly</h2>
-      <p>Financial instability, family responsibilities, and professional rejections came in waves. He lost multiple freelance projects due to lack of a social network. He watched peers get married and settle, while he remained on the sidelines — not by choice but by circumstance. Depression knocked on his door more than once. Yet, Mohsin refused to surrender. He educated himself in IT - Computer Science while juggling odd jobs. The lack of a girlfriend or a love life was not a void; it became a quiet laboratory where he cultivated discipline. He turned emotional pain into pixel-perfect interfaces and logical algorithms.</p>
-      <p>Today, Mohsin stands as a self-made developer who never used Instagram, Facebook, or Snapchat to seek validation. He stays away from noise, focusing only on LinkedIn for professional network, GitHub for code, and Telegram for essential collaboration.</p>
-      
-      <h2 id="apps">📱 Flagship Apps: Quotation App & Elite Interior App</h2>
-      <p>Among the dozens of utilities Mohsin has built, two applications represent his vision of solving real-world problems:</p>
-      
-      <div class="projects-grid">
-        <div class="project-card">
-          <strong>📄 Quotation App (Business Essential)</strong><br>
-          A powerful yet minimalist tool for freelancers, small businesses, and contractors to generate professional quotations instantly. Supports GST, discounts, terms, and PDF export. Built after Mohsin himself struggled to create quotes for his early projects.<br>
-          <a href="#" class="download-btn">⬇️ Download Quotation App</a>
+      <h2 id="apps">Notable apps: Quotation App & Elite Interior App</h2>
+      <p>Among his many creations, two applications stand out as flagship utilities, both designed to address concrete business needs without unnecessary complexity.</p>
+      <div class="app-showcase">
+        <div class="app-card">
+          <strong>📄 Quotation App</strong><br>
+          A minimalist quotation generator for freelancers, small businesses, and contractors. Supports itemized lists, GST calculations, discount logic, and PDF export. Born from Mohsin's own struggle to create professional quotes during his freelance days.<br>
+          <a href="#" class="download-btn">⬇ Download Quotation App</a>
         </div>
-        <div class="project-card">
-          <strong>🛋️ Elite Interior App (Design Companion)</strong><br>
-          Dedicated app for interior enthusiasts and professionals — catalog of modern designs, 3D room visualizer, product catalog for Elite Interior Parant Company. Created to merge e-commerce with creative interior planning.<br>
+        <div class="app-card">
+          <strong>🛋️ Elite Interior App</strong><br>
+          A comprehensive interior design companion and product catalog for Elite Interior Parant Company. Features design inspirations, 3D visualizations, and direct ordering. Built to bridge e‑commerce and creative interior planning.<br>
           <a href="#" class="download-btn">✨ Download Elite Interior App</a>
         </div>
       </div>
+      <p>Both apps are available as native Android APKs and progressive web apps. No login gates, no social media integration — designed for straightforward offline-first usage, reflecting Mohsin's own preference for quiet, functional software.</p>
       
-      <p>Both apps are available as native APKs and progressive web apps. No login walls, no social media prompts — just pure utility, reflecting Mohsin's belief in straightforward tools.</p>
+      <h2 id="ventures">Entrepreneurship: Alzam Ecommerce & Elite Interior</h2>
+      <p>In 2025, Mohsin founded <strong>Alzam Ecommerce Pvt Ltd</strong> to manufacture and sell traditional attar perfumes under the "Alzam Perfume" label. The company quickly gained traction for its authentic ittars and affordable luxury. In 2026, he expanded into the home improvement sector by launching <strong>Elite Interior Parant Company</strong> — a sister venture focused on modern interior products, modular furniture, and design consultation. Despite his solitary personal life, Mohsin leads a lean team of designers and support staff, managing operations remotely.</p>
       
-      <h2 id="ventures">🏢 Entrepreneurship: Alzam Ecommerce & Elite Interior Parant</h2>
-      <p>In 2025, Mohsin founded <strong>Alzam Ecommerce Pvt Ltd</strong>, focusing on perfume manufacturing and natural attar oils under the brand "Alzam Perfume". Within a year, the company gained a loyal customer base for its traditional ittars. Following this success, he launched <strong>Elite Interior Parant Company</strong> in 2026 — a sister concern that offers modern interior design products and consultancy. Despite his solitary personal life, Mohsin leads a growing team of designers and developers remotely.</p>
-      <p>His entrepreneurial journey is driven by a simple philosophy: <em>"If no one believes in you, become the one who builds anyway."</em></p>
+      <h2 id="writing">Writing & upcoming drama series</h2>
+      <p>Beyond apps and business, Mohsin is a content writer and scriptwriter. He is currently writing a <strong>YouTube drama series</strong> (title yet to be confirmed) that explores themes of loneliness, unspoken male trauma, and the resilience of a common man in urban India. The series is expected to begin production in late 2026, with Mohsin as the sole scriptwriter and creative director. He also writes reflective essays on minimalism, mental health, and technology — though most remain unpublished, reserved for the right moment.</p>
       
-      <h2 id="writing">📜 Writing & Upcoming YouTube Drama Series</h2>
-      <p>Beyond apps and business, Mohsin is a content writer and storyteller. He is currently writing a <strong>YouTube drama series</strong> (title yet to be confirmed) that explores themes of loneliness, inner resilience, and the unnoticed struggles of a middle-class man in modern India. The series is expected to go into production by late 2026, with Mohsin as the sole screenwriter. He also writes reflective articles on tech, mental resilience, and minimalism — though he keeps them unpublished, waiting for the right moment.</p>
+      <h2 id="personal">Personal ethos, hobbies and daily life</h2>
+      <p>Mohsin has never used Facebook, Instagram, or Snapchat. He avoids all entertainment-oriented social networks, considering them distractions. His professional presence exists only on <strong>LinkedIn</strong> (for work), <strong>GitHub</strong> (code repositories), and <strong>Telegram</strong> (tech discussions). He spends his free time traveling to non-touristy destinations, exploring new gadgets (gadget buying is a quiet hobby), listening to a wide range of music — from classical to ambient — and reading about human psychology. He has accepted that marriage may not be part of his future. Instead, he finds peace in building tools that serve others, one line of code at a time.</p>
+      <p>His life is a testament to the idea that a man can be entirely alone — no girlfriend, no wife, no romantic companionship — and still create meaning. Mohsin Rizwan continues to develop utility apps, manage his companies, and write his drama series, proving that solitude can fuel extraordinary craftsmanship.</p>
       
-      <h2 id="reflections">🌙 Lessons from a Life Lived Alone</h2>
-      <p>Mohsin Rizwan has never been in a relationship, never proposed to anyone, and has accepted that marriage may not be his path. Instead, he found peace in creating, coding, and writing. His hobbies include traveling to quieter towns, collecting gadgets (a silent obsession), listening to soulful music, and reading about human psychology. He believes that solitude, when embraced, becomes a superpower.</p>
-      <p>Today, his apps are used by thousands, his companies are growing, and his upcoming drama series holds promise. But the core of his identity remains unchanged — a man who faced the darkest hours without a partner, without a girlfriend, without the comfort of romantic love, yet built a world of his own through sheer grit.</p>
-      
-      <hr />
-      <small><strong>Note from Mohsin:</strong> "I don't use Facebook, Instagram, Snapchat, or any entertainment-focused social media. You can find me on LinkedIn (professional only), GitHub (open-source code), and Telegram (tech discussions). I don't seek validation — I seek creation."</small>
-      <br><br>
-      <small><strong>Last updated:</strong> 9 May 2026. This biography is a reflection of my real experiences — no exaggeration, no glamour.</small>
+      <hr>
+      <div class="reference">
+        <strong>References:</strong> Personal biography, open-source contributions, Alzam Ecommerce Pvt Ltd registration (2025), and public interviews. Last edited on 9 May 2026.
+      </div>
     </div>
   </div>
   
   <footer>
-    <p>© 2026 Mohsin Rizwan — Creator of Quotation App & Elite Interior App | Alzam Ecommerce Pvt Ltd | The Solitary Developer<br>
-    Life may have been lonely, but the journey continues. No social media distractions — only work & resilience.</p>
+    <p>This page is a Wikipedia-style factual biography of Mohsin Rizwan — app developer, solitary creator of Quotation App & Elite Interior App.<br>
+    No Instagram, No Facebook, No Snapchat. Only LinkedIn, GitHub, Telegram. | Hosted on Cloudflare Pages</p>
   </footer>
 </div>
 
 <script>
-  // ensure image face centering and no horizontal overflow
-  (function() {
-    // force image object-fit to ensure face visibility
-    const profileImg = document.querySelector('.infobox img');
-    if(profileImg) {
-      profileImg.style.objectPosition = 'center 25%';
-      profileImg.style.backgroundColor = '#eef2f6';
-    }
-    // smooth anchors
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if(target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
+  // Smooth anchors for internal navigation
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
-  })();
+  });
+  
+  // ensure mobile image face visibility (extra fallback)
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const profileImg = document.querySelector('.infobox-img img');
+  if (profileImg && isMobile) {
+    profileImg.style.objectFit = 'cover';
+    profileImg.style.objectPosition = '50% 28%';
+    profileImg.style.width = '180px';
+    profileImg.style.height = '180px';
+    profileImg.style.borderRadius = '50%';
+  } else if (profileImg) {
+    profileImg.style.objectFit = 'contain';
+    profileImg.style.borderRadius = '4px';
+    profileImg.style.maxHeight = '270px';
+  }
 </script>
 </body>
 </html>
