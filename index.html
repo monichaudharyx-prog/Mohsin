@@ -2,32 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
-  <meta name="theme-color" content="#ffffff">
-  <title>Mohsin Rizwan | Web & App Developer – Official Bio</title>
-  <meta name="description" content="Mohsin Rizwan – Web Designer, App Developer, Content Writer, Founder Alzam Ecommerce. Complete portfolio: apps, websites, and professional journey.">
-  <meta name="keywords" content="Mohsin Rizwan, web designer, app developer, Alzam Perfume, Elite Interior, GST calculator, percentage calculator, vclock, today time, prayer times, quotation app">
-  <meta name="author" content="Mohsin Rizwan">
-  <meta name="robots" content="index, follow, max-snippet:-1">
-  <link rel="canonical" href="https://mohsinrizwan.dev/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Mohsin Rizwan - Wikipedia Style | Web & App Developer Portfolio</title>
+  <meta name="description" content="Mohsin Rizwan: Web Designer, App Developer, Content Writer. Founder of Alzam Ecommerce & Elite Interior. Creator of vClock, Today Time, Prayer Times, GST Calculator & more." />
+  <meta name="keywords" content="Mohsin Rizwan, app developer, web designer, GST calculator, percentage calculator, quotation app, vclock, today time, prayer times, interior app" />
+  <meta name="author" content="Mohsin Rizwan" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mohsinrizwan.dev/" />
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Mohsin Rizwan – Developer & Entrepreneur">
-  <meta property="og:description" content="Web & App Developer | Founder Alzam Ecommerce | Creator of 10+ utility apps & websites.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/monichaudharyx-prog/Mohsin/main/Picsart_25-11-17_23-52-27-402.png">
-  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Mohsin Rizwan | App & Web Developer Portfolio" />
+  <meta property="og:description" content="Creator of practical tools: Quotation App, GST Calculator, Percentage Calc, vClock, Today Weather, Prayer Times & more." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/monichaudharyx-prog/Mohsin/main/Picsart_25-11-17_23-52-27-402.png" />
+  <meta property="og:type" content="profile" />
   
-  <!-- Schema Person (No social media tags) -->
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohsin Rizwan - Developer Portfolio" />
+  
+  <!-- Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Mohsin Rizwan",
     "birthDate": "1995-06-15",
-    "birthPlace": {"@type": "Place", "address": {"@type": "PostalAddress", "addressLocality": "Uttar Pradesh", "addressCountry": "India"}},
     "jobTitle": "Web Designer & App Developer",
     "worksFor": {"@type": "Organization", "name": "Alzam Ecommerce Pvt Ltd"},
-    "alumniOf": {"@type": "EducationalOrganization", "name": "IT - Computer Science"},
+    "knowsAbout": ["Web Development", "Mobile App Development", "Content Writing", "Calculator Apps", "Utility Tools"],
+    "url": "https://mohsinrizwan.dev",
     "image": "https://raw.githubusercontent.com/monichaudharyx-prog/Mohsin/main/Picsart_25-11-17_23-52-27-402.png"
   }
   </script>
@@ -40,312 +43,363 @@
     }
     
     body {
-      font-family: 'Georgia', 'Times New Roman', 'Segoe UI', serif;
-      background: #f4f7fb;
-      color: #1a2a3a;
+      font-family: 'Segoe UI', 'Georgia', 'Times New Roman', serif;
+      background: #eef2f6;
+      color: #1f2d3d;
       line-height: 1.5;
       padding: 16px;
     }
     
-    /* container - fully responsive, no cut-off */
-    .wiki-container {
-      max-width: 1100px;
+    /* Main container - full width with no cut-off */
+    .wikipedia-container {
+      max-width: 1200px;
       margin: 0 auto;
-      background: white;
-      border-radius: 24px;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+      background: #ffffff;
+      border: 1px solid #cbd5e0;
+      border-radius: 12px;
       overflow: hidden;
-      border: 1px solid #dce5ec;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     }
     
-    /* mobile-first adjustments */
-    @media (max-width: 900px) {
-      body { padding: 12px; }
-      .wiki-container { border-radius: 20px; }
-    }
-    
-    /* header strip */
-    .top-strip {
-      background: #eef3fa;
-      padding: 12px 20px;
+    .header-strip {
+      background: #f0f4f8;
+      border-bottom: 1px solid #cbd5e0;
+      padding: 14px 20px;
       font-size: 13px;
-      border-bottom: 1px solid #cbdbe0;
       font-family: monospace;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
     }
     
-    /* flexible layout: on mobile infobox goes above content but full width */
-    .content-flex {
+    /* FLEXIBLE CONTENT - NO CUTOFF ON MOBILE */
+    .content-wrapper {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
-      flex-wrap: wrap;
     }
     
-    /* INFOBOX - fully responsive */
-    .infobox-card {
-      float: none;
-      width: 300px;
-      background: #fefefa;
-      border: 1px solid #d4dee8;
-      border-radius: 20px;
-      margin: 24px 24px 24px 0;
-      padding: 18px 16px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    /* Infobox - fully responsive */
+    .infobox {
+      float: right;
+      width: 280px;
+      background: #fafcfd;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      margin: 20px 24px 20px 24px;
+      padding: 14px;
+      font-size: 14px;
       flex-shrink: 0;
     }
     
-    @media (max-width: 780px) {
-      .infobox-card {
-        width: 100%;
-        margin: 20px 20px 0 20px;
-      }
-      .content-flex {
-        flex-direction: column;
-      }
-    }
-    
-    .infobox-card h3 {
-      background: #e9f0f5;
+    .infobox h3 {
+      background: #eef2f8;
       text-align: center;
       padding: 10px;
-      margin: -18px -16px 18px -16px;
-      border-radius: 20px 20px 0 0;
-      font-size: 1.4rem;
-      border-bottom: 1px solid #cbdbe0;
+      margin: -14px -14px 14px -14px;
+      border-radius: 12px 12px 0 0;
+      font-size: 20px;
+      border-bottom: 1px solid #cbd5e1;
     }
     
-    .profile-pic {
-      text-align: center;
-      margin-bottom: 18px;
-    }
-    .profile-pic img {
-      width: 180px;
-      max-width: 80%;
-      height: auto;
-      border-radius: 50%;
-      border: 4px solid #cbdde9;
-      object-fit: cover;
-      aspect-ratio: 1/1;
-    }
-    .info-table {
+    .infobox img {
       width: 100%;
-      font-size: 14px;
+      max-width: 220px;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      display: block;
+      border: 2px solid #cbd5e1;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
     }
-    .info-table th {
+    
+    .infobox table {
+      width: 100%;
+    }
+    
+    .infobox th {
       text-align: left;
       font-weight: 700;
-      padding: 8px 4px 6px 0;
+      padding: 7px 5px;
+      background: transparent;
       width: 38%;
-      color: #2c5a7a;
-    }
-    .info-table td {
-      padding: 8px 2px 6px 0;
     }
     
-    /* main article */
-    .main-content {
+    .infobox td {
+      padding: 7px 5px;
+    }
+    
+    /* MAIN ARTICLE - TAKES REMAINING SPACE */
+    .main-article {
       flex: 1;
-      padding: 24px 28px;
+      padding: 20px 28px;
+      min-width: 0;
       overflow-x: auto;
     }
     
-    @media (max-width: 600px) {
-      .main-content { padding: 20px 18px; }
+    h1 {
+      font-size: 1.9rem;
+      border-bottom: 1px solid #cbd5e0;
+      margin-bottom: 16px;
+      padding-bottom: 6px;
     }
     
-    h1 {
-      font-size: 2rem;
-      border-bottom: 1px solid #cbdbe0;
-      margin-bottom: 12px;
-      font-weight: 500;
-    }
     h2 {
       font-size: 1.5rem;
-      border-bottom: 1px solid #e2e8f0;
-      margin: 28px 0 12px 0;
-      padding-bottom: 4px;
+      border-bottom: 1px solid #cbd5e0;
+      margin: 28px 0 14px 0;
+      clear: both;
     }
+    
     .toc {
-      background: #f9fbfd;
-      border: 1px solid #dfe6ed;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
       padding: 12px 18px;
-      margin: 18px 0 24px;
+      margin: 18px 0;
+      width: 280px;
       display: inline-block;
-      width: auto;
-      border-radius: 16px;
+      border-radius: 12px;
     }
-    .projects-row {
+    
+    /* Projects grid - responsive */
+    .projects-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 18px;
       margin: 20px 0;
     }
-    .app-card {
-      background: linear-gradient(145deg, #ffffff, #f6fafe);
-      border-left: 5px solid #2c7cb6;
-      padding: 15px 18px;
-      border-radius: 20px;
-      flex: 1 1 240px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-      transition: 0.1s ease;
+    
+    .project-card {
+      background: #fefce8;
+      border-left: 5px solid #1e4a76;
+      padding: 14px 18px;
+      border-radius: 16px;
+      flex: 1 1 260px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
-    .badge-demo {
-      background: #2c6e9e22;
-      color: #1c5275;
-      border-radius: 50px;
-      padding: 4px 12px;
-      font-size: 12px;
+    
+    .app-badge {
       display: inline-block;
+      background: #256f8a;
+      color: white;
+      border-radius: 40px;
+      padding: 4px 14px;
+      font-size: 12px;
+      margin: 3px 5px 3px 0;
+    }
+    
+    .download-btn {
+      display: inline-block;
+      background: #1e4a76;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-size: 12px;
       margin-top: 10px;
+      font-weight: 500;
     }
-    .download-hint {
-      background: #eef2f7;
-      padding: 4px 12px;
-      border-radius: 24px;
+    
+    /* responsive apps list */
+    .app-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 15px 0;
+    }
+    .app-item {
+      background: #eef2ff;
+      border-radius: 40px;
+      padding: 8px 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    footer {
+      background: #f8fafc;
+      text-align: center;
+      padding: 18px;
       font-size: 12px;
-      display: inline-block;
-      margin-right: 8px;
-      margin-top: 8px;
+      border-top: 1px solid #cbd5e0;
+      clear: both;
+    }
+    
+    /* --- MOBILE FIX: no right cut, infobox becomes centered on small screens --- */
+    @media (max-width: 780px) {
+      body {
+        padding: 10px;
+      }
+      .content-wrapper {
+        flex-direction: column;
+      }
+      .infobox {
+        float: none;
+        width: 96%;
+        margin: 16px auto;
+      }
+      .main-article {
+        padding: 16px 18px;
+        width: 100%;
+      }
+      h1 {
+        font-size: 1.7rem;
+      }
+      .toc {
+        width: auto;
+      }
+      .project-card {
+        flex: 1 1 100%;
+      }
+      .infobox img {
+        max-width: 160px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .main-article {
+        padding: 12px 14px;
+      }
+      .infobox th, .infobox td {
+        font-size: 12px;
+      }
+    }
+    
+    .no-social {
+      color: #2c6e9e;
     }
     hr {
-      margin: 24px 0;
-    }
-    footer {
-      background: #f0f4f9;
-      text-align: center;
-      padding: 20px;
-      font-size: 12px;
-      border-top: 1px solid #dfe6ed;
-    }
-    a {
-      color: #1f6392;
-      text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
-    .no-social {
-      font-size: 12px;
-      color: #5f7d9c;
+      margin: 20px 0;
     }
   </style>
 </head>
 <body>
-<div class="wiki-container">
-  <div class="top-strip">
-    <span>📄 Mohsin Rizwan — Developer Knowledge Base</span>
-    <span>🌐 Live portfolio | Cloudflare Pages</span>
+<div class="wikipedia-container">
+  <div class="header-strip">
+    📚 Wikipedia-style biography | <strong>Mohsin Rizwan</strong> — App & Web Developer Portfolio • No Social Media (Only LinkedIn/GitHub/Telegram)
   </div>
   
-  <div class="content-flex">
-    <!-- INFOSECTION: responsive no cut -->
-    <div class="infobox-card">
+  <div class="content-wrapper">
+    <!-- SIDEBAR INFOBOX (responsive) -->
+    <div class="infobox">
       <h3>Mohsin Rizwan</h3>
-      <div class="profile-pic">
-        <img src="https://raw.githubusercontent.com/monichaudharyx-prog/Mohsin/main/Picsart_25-11-17_23-52-27-402.png" alt="Mohsin Rizwan photo" loading="lazy" onerror="this.src='https://placehold.co/200x200?text=MR'">
-      </div>
-      <table class="info-table">
-        <tr><th>Born</th><td>15 June 1995 (age 30)<br>Uttar Pradesh, India</td></tr>
+      <img src="https://raw.githubusercontent.com/monichaudharyx-prog/Mohsin/main/Picsart_25-11-17_23-52-27-402.png" alt="Mohsin Rizwan profile" loading="lazy" onerror="this.src='https://placehold.co/400x400?text=Mohsin+Rizwan'">
+      <table>
+        <tr><th>Born</th><td>15 June 1995<br>Uttar Pradesh, India</td></tr>
+        <tr><th>Age</th><td>30 years</td></tr>
         <tr><th>Occupation</th><td>Web Designer, App Developer, Content Writer</td></tr>
-        <tr><th>Known for</th><td>Alzam Ecommerce Pvt Ltd, Elite Interior, Utility Apps</td></tr>
-        <tr><th>Father</th><td>Rizwan Shahid</td></tr>
-        <tr><th>Mother</th><td>Munazari Begum</td></tr>
+        <tr><th>Companies</th><td>Alzam Ecommerce Pvt Ltd (2025)<br>Elite Interior Parant Co. (2026)</td></tr>
+        <tr><th>Parents</th><td>Rizwan Shahid & Munazari Begum</td></tr>
         <tr><th>Siblings</th><td>Nazim Chaudhary (Elder)<br>Amir Chaudhary (Younger)</td></tr>
         <tr><th>Education</th><td>IT - Computer Science</td></tr>
-        <tr><th>Marital status</th><td>Unmarried</td></tr>
-        <tr><th>Hobbies</th><td>Writing, Gadget buying, Traveling, Listening to songs</td></tr>
+        <tr><th>Marital Status</th><td>Unmarried</td></tr>
+        <tr><th>Hobbies</th><td>Writing, Traveling, Gadget buying, Listening to Songs</td></tr>
       </table>
+      <div style="margin-top: 12px; font-size:12px;text-align:center;">📱 Creator of 15+ Utility Apps</div>
     </div>
     
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
+    <!-- MAIN ARTICLE -->
+    <div class="main-article">
       <h1>Mohsin Rizwan</h1>
-      <p><strong>Mohsin Rizwan</strong> (born 15 June 1995) is an Indian web designer, app developer, content writer, and entrepreneur. He is the founder of <strong>Alzam Ecommerce Pvt Ltd</strong> (2025) which manufactures premium <strong>Alzam Attar & Perfume</strong>, and later established <strong>Elite Interior Parant Company</strong> (2026) under the same group. With a degree in IT - Computer Science, Mohsin has built over 15+ utility apps and responsive websites used by thousands daily.</p>
+      <p><strong>Mohsin Rizwan</strong> (born 15 June 1995) is an Indian web designer, full-stack app developer, content writer, and entrepreneur. He is the founder of <strong>Alzam Ecommerce Pvt Ltd</strong> (perfume manufacturing and attar brand) and <strong>Elite Interior Parant Company</strong>. With expertise in building practical digital tools, Mohsin has developed many high-utility applications including <strong>Quotation App, GST Calculator, Percentage Calculator, Interior App, vClock, Today Time, Today Weather, Prayer Times, Calculator, Convertor</strong> and more.</p>
       
       <div class="toc">
-        <strong>📑 Contents</strong>
-        <ul style="margin-top: 8px; padding-left: 24px;">
-          <li><a href="#family">1 Family & Early Life</a></li>
-          <li><a href="#career">2 Career & Entrepreneurship</a></li>
-          <li><a href="#websites">3 Websites & Platforms</a></li>
-          <li><a href="#apps">4 Mobile Apps (Downloads Available)</a></li>
-          <li><a href="#writing">5 Writing & Upcoming Drama</a></li>
+        <strong>📑 Contents</strong> [hide]
+        <ul>
+          <li><a href="#early">1 Early life & family</a></li>
+          <li><a href="#career">2 Career & ventures</a></li>
+          <li><a href="#apps">3 Apps & web projects</a></li>
+          <li><a href="#writing">4 Writing & upcoming drama</a></li>
+          <li><a href="#personal">5 Personal life & hobbies</a></li>
+          <li><a href="#contact">6 Contact & platforms</a></li>
         </ul>
       </div>
       
-      <h2 id="family">📖 Family & Early Life</h2>
-      <p>Mohsin was born in <strong>Uttar Pradesh</strong> and raised in a supportive family. His father <strong>Rizwan Shahid</strong> and mother <strong>Munazari Begum</strong> encouraged his passion for technology and literature. He has two brothers: elder brother <strong>Nazim Chaudhary</strong> and younger brother <strong>Amir Chaudhary</strong>. Mohsin pursued IT - Computer Science and later specialized in front-end development, hybrid app frameworks, and creative content writing.</p>
+      <h2 id="early">📖 Early life and family</h2>
+      <p>Mohsin was born in <strong>Uttar Pradesh, India</strong>, to father <strong>Rizwan Shahid</strong> and mother <strong>Munazari Begum</strong>. He grew up alongside elder brother <strong>Nazim Chaudhary</strong> and younger brother <strong>Amir Chaudhary</strong>. Passionate about computers from an early age, Mohsin pursued formal education in <strong>IT - Computer Science</strong>, which fueled his career in web development and software creation.</p>
       
-      <h2 id="career">💼 Career & Companies</h2>
-      <p>Starting as a freelance web developer in 2015, Mohsin quickly expanded to mobile app development and e-commerce solutions. In <strong>2025</strong>, he founded <strong>Alzam Ecommerce Pvt Ltd</strong> with a focus on manufacturing authentic <strong>attar, ittar, and designer perfumes</strong>. The brand "Alzam Perfume" gained popularity through online channels. In <strong>2026</strong>, he launched <strong>Elite Interior Parant Company</strong> (by Alzam Ecommerce Pvt Ltd) — a premium interior design and home decor venture. Both companies operate with digital-first strategies built on Mohsin’s own tech ecosystem.</p>
+      <h2 id="career">💼 Entrepreneurship & Professional Journey</h2>
+      <p>Mohsin started as a freelance web designer, later expanding into mobile app development and content writing. In <strong>2025</strong>, he founded <strong>Alzam Ecommerce Pvt Ltd</strong> to launch premium <strong>Alzam Perfume & Attar</strong> manufacturing. His brand quickly gained recognition for high-quality natural ittars. In <strong>2026</strong>, he launched a second venture under the same umbrella: <strong>Elite Interior Parant Company</strong>, providing modern interior design solutions and decor products.</p>
+      <p>He has also collaborated with small businesses to build custom software solutions, including inventory management and billing tools.</p>
       
-      <h2 id="websites">🌐 Notable Websites & Web Tools</h2>
-      <p>Mohsin has developed multiple high-performance websites, many of which rank on search engines for utility keywords. Below are his major web projects:</p>
-      <div class="projects-row">
-        <div class="app-card"><strong>⏱️ VClock</strong><br>Minimalist online alarm & stopwatch tool<br><span class="badge-demo">Live Utility</span></div>
-        <div class="app-card"><strong>🕒 Today Time</strong><br>Live local time & weather analog clock PWA<br><span class="badge-demo">SEO Ranked</span></div>
-        <div class="app-card"><strong>🌦️ Today Weather</strong><br>10-day forecast + feels like, UV, pressure<br><span class="badge-demo">Mobile ready</span></div>
-        <div class="app-card"><strong>🕌 Prayer Times</strong><br>Islamic prayer times, countdown, Hijri, Qibla<br><span class="badge-demo">Adhan + Jummah</span></div>
+      <h2 id="apps">📱 Original Apps & Websites (Created by Mohsin Rizwan)</h2>
+      <p>Mohsin has developed an impressive collection of utility apps and websites that serve thousands of users. All apps are available for direct download or use via web. <strong>No third-party social media logins required.</strong></p>
+      
+      <div class="projects-grid">
+        <div class="project-card"><strong>📄 Quotation App</strong><br>Generate professional quotations instantly. Used by small businesses.<br><span class="app-badge">Android/Web</span> <a href="#" class="download-btn">Download APK</a></div>
+        <div class="project-card"><strong>💰 GST Calculator India</strong><br>Accurate GST tax calculator with reverse GST, invoices.<br><span class="app-badge">PWA</span> <a href="#" class="download-btn">Use Online</a></div>
+        <div class="project-card"><strong>📊 Percentage Calculator</strong><br>Percentage increase, decrease, discount, ratio tools.<br><span class="app-badge">Fast & Offline</span> <a href="#" class="download-btn">Get App</a></div>
+        <div class="project-card"><strong>🛋️ Interior App (Elite Interior)</strong><br>AR-based interior catalog, design ideas and product showcase.<br><span class="app-badge">Beta</span> <a href="#" class="download-btn">Try Demo</a></div>
+        <div class="project-card"><strong>⏰ vClock (Virtual Analog Clock)</strong><br>Beautiful full-screen analog clock with themes and alarms.<br><a href="#" class="download-btn">Live Demo</a></div>
+        <div class="project-card"><strong>🕒 Today Time</strong><br>Live local time, weather, sunrise/sunset with analog design.<br><a href="#" class="download-btn">Open Web App</a></div>
+        <div class="project-card"><strong>🌤️ Today Weather</strong><br>10-day forecast, feels like, UV index, wind speed, humidity.<br><a href="#" class="download-btn">Weather App</a></div>
+        <div class="project-card"><strong>🕌 Prayer Times</strong><br>Islamic prayer times, countdown, Qibla, Hijri date, adhan alert.<br><a href="#" class="download-btn">Install PWA</a></div>
+        <div class="project-card"><strong>🧮 Universal Calculator</strong><br>Scientific & basic calculator with history, dark mode.<br><a href="#" class="download-btn">Download</a></div>
+        <div class="project-card"><strong>🔄 Unit Converter</strong><br>Convert length, weight, currency, temperature, area fast.<br><a href="#" class="download-btn">Get Converter</a></div>
       </div>
-      <div class="projects-row">
-        <div class="app-card"><strong>📐 GST Calculator India</strong><br>Real-time GST tax calculator for businesses<br><span class="badge-demo">Finance tool</span></div>
-        <div class="app-card"><strong>🧮 Percentage Calculator</strong><br>Fast discount, tip, percentage change tool<br><span class="badge-demo">Educational</span></div>
-        <div class="app-card"><strong>🔄 Unit Converter</strong><br>Length, weight, currency, temperature converter<br><span class="badge-demo">Utility Hub</span></div>
-        <div class="app-card"><strong>🗂️ Quotation Manager App</strong><br>Generate business quotations & invoices<br><span class="badge-demo">B2B tool</span></div>
-      </div>
-      <p>All these websites are fully responsive, SEO-optimized, and hosted on high-speed infrastructure (Cloudflare). They receive thousands of unique visitors each month.</p>
       
-      <h2 id="apps">📱 Mobile Applications (Download & Install)</h2>
-      <p>Mohsin develops cross-platform hybrid apps (PWA/APK) that can be installed on Android and iOS devices. Users can directly download the apps from the respective project pages. Here's the complete list:</p>
-      <ul style="margin-left: 28px; margin-bottom: 18px;">
-        <li><strong>GST Calculator Pro</strong> – Offline invoice tax calculator + reverse GST mode.</li>
-        <li><strong>Percentage Master</strong> – Quick discount, rate, increase/decrease tool.</li>
-        <li><strong>Interior Vision (Elite Interior)</strong> – AR-inspired design catalog for interiors.</li>
-        <li><strong>VClock Suite</strong> – Stopwatch, timer, world clock, alarm.</li>
-        <li><strong>Today Time Plus</strong> – Weather + analog clock widgets.</li>
-        <li><strong>Weather³ Studio</strong> – 10-day forecast & air quality.</li>
-        <li><strong>Prayer Mate</strong> – Full salah times, Qibla finder & azan.</li>
-        <li><strong>Calculator X</strong> – Scientific & basic calculator combo.</li>
-        <li><strong>Convertify</strong> – Universal unit converter (currency, length, area).</li>
-        <li><strong>Quotation Flow</strong> – Business estimate & invoice generator.</li>
+      <h3>🌟 Additional Web Tools & PWAs</h3>
+      <div class="app-list">
+        <span class="app-item">📆 Hijri Calendar</span>
+        <span class="app-item">🧾 Invoice Maker</span>
+        <span class="app-item">⏱️ Stopwatch & Timer</span>
+        <span class="app-item">📏 EMI Calculator</span>
+        <span class="app-item">💱 Currency Converter</span>
+        <span class="app-item">🧮 Age Calculator</span>
+      </div>
+      <p>All above tools are actively maintained, ad-light, and built for performance. Users can directly download APKs from GitHub releases or use progressive web apps without any social sign-in.</p>
+      
+      <h3>🌐 Flagship Websites Developed</h3>
+      <ul>
+        <li><strong>Alzam Perfume Official</strong> — E-commerce for attar and luxury perfumes.</li>
+        <li><strong>Elite Interior Co.</strong> — Interior product catalog and design consultation.</li>
+        <li><strong>vClock.app</strong> — Minimal analog clock experience.</li>
+        <li><strong>TodayTime.live</strong> — Global time & weather tracker.</li>
+        <li><strong>MyPrayerTime.app</strong> — Islamic prayer schedule and Qibla.</li>
       </ul>
-      <p>All apps are available for direct download (APK / PWA) from the official project repository. Each app is built with privacy-first design, no unnecessary permissions. <strong>Total combined downloads exceed 15K+</strong> across platforms.</p>
       
       <h2 id="writing">✍️ Writing & Upcoming YouTube Drama Series</h2>
-      <p>Beyond coding, Mohsin is a passionate <strong>content writer</strong> and scriptwriter. He is currently working on a <strong>YouTube drama series</strong> (title yet to be confirmed) that explores contemporary social themes. The scripts are written entirely by Mohsin, and production is in pre-launch phase. He also writes technical articles, short stories, and poetry in his free time.</p>
-      <p>His writing style is known for emotional realism and relatable characters. He believes stories can change perspectives, and he aims to merge digital media with meaningful narratives.</p>
+      <p>Mohsin is a passionate content writer and screenwriter. He is currently developing a <strong>YouTube Drama Series</strong> (title yet to be confirmed) focused on social realism and family dynamics. The script is in its final stages, and production is slated for late 2026. Besides this, he writes short stories and technical articles on development best practices.</p>
       
-      <h2>🛠️ Other Projects & Daily Tools</h2>
-      <p>Mohsin also maintains several internal tools: <strong>Interior design configurator</strong> for Elite Interior, <strong>perfume ingredient calculator</strong> for Alzam Manufacturing, and a <strong>client quotation system</strong> used by 20+ small businesses. All projects are self-coded, with an emphasis on clean UI and fast performance.</p>
+      <h2 id="personal">🧑‍💻 Personal Life & Hobbies</h2>
+      <p>Mohsin resides in India and remains unmarried, fully dedicated to his entrepreneurial and creative journey. His hobbies include <strong>writing, gadget buying (tech enthusiast), traveling to unexplored places, and listening to a variety of music genres</strong>. He loves solving real-world problems through minimalist apps.</p>
+      <p>While he avoids mainstream social media, he maintains a professional presence on <strong>LinkedIn, GitHub, and Telegram</strong> only. He believes in direct, distraction-free communication.</p>
       
-      <h2>📌 Personal Life & Hobbies</h2>
-      <p>Mohsin remains unmarried and fully dedicated to his entrepreneurial journey. He enjoys <strong>traveling</strong> to historical places, <strong>buying useful gadgets</strong> (smart tech enthusiast), and listening to a wide range of songs from Sufi to instrumental. He also loves reading non-fiction and experimenting with new web frameworks.</p>
-      <p><strong>Note:</strong> Mohsin does not use Facebook, Instagram, Snapchat, or any mainstream social media. He stays connected via professional platforms only (LinkedIn, GitHub, Telegram – but these are not displayed anywhere publicly on this page). His focus is on building products and writing scripts.</p>
+      <h2 id="contact">🔗 Contact & Professional Profiles</h2>
+      <p><strong>No Facebook | No Instagram | No Snapchat</strong> — Mohsin prefers focused platforms. Connect via:</p>
+      <ul>
+        <li>🐙 <strong>GitHub:</strong> <a href="https://github.com/monichaudharyx-prog">github.com/monichaudharyx-prog</a> (All open-source projects and app source codes)</li>
+        <li>🔗 <strong>LinkedIn:</strong> Mohsin Rizwan (Professional network only)</li>
+        <li>📱 <strong>Telegram:</strong> @mohsin_dev (For business & tech discussions)</li>
+        <li>📧 <strong>Email:</strong> mohsin@alzam.store (Work inquiries)</li>
+      </ul>
+      <p>All apps listed above are available for download via direct APK or web link. Users can also request custom business software solutions.</p>
       
-      <hr>
-      <p class="no-social"><i class="fa-regular fa-circle-check"></i> Verified portfolio — Complete list of apps/websites built by Mohsin Rizwan. Updated May 2026.</p>
+      <hr />
+      <small><strong>📌 References:</strong> Personal projects, open source contributions, Alzam Ecommerce Pvt Ltd company filings (2025), and developer portfolio. Last updated: 9 May 2026.</small>
     </div>
   </div>
   
   <footer>
-    <p>© 2026 Mohsin Rizwan — Wikipedia-style biography. All projects, apps and tools are developed independently.<br>
-    This page is hosted on <strong>Cloudflare Pages</strong> | No third-party social media links | Privacy focused</p>
+    <p>✅ This page is fully responsive — Mobile friendly • No data cutting from right side • Works on all devices.<br>
+    © 2011 Mohsin Rizwan — Creator of Quotation App, GST Calc, Percentage Calc, vClock, Today Time, Prayer Times, and Elite Interior suite.<br>
+    Hosted on Cloudflare Pages • Wikipedia-style knowledge base</p>
+    <p style="font-size:11px; margin-top:6px;">⚡ No social media distractions • Only LinkedIn / GitHub / Telegram for professional networking</p>
   </footer>
 </div>
 
-<!-- Responsive fix: ensure no overflow on mobile, no horizontal scroll -->
-<style>
-  .main-content ul, .main-content .projects-row { overflow-x: visible; word-break: break-word; }
-  body { overflow-x: hidden; }
-  .infobox-card, .main-content, .wiki-container { max-width: 100%; }
-  img { max-width: 100%; height: auto; }
-  .info-table td, .info-table th { word-break: break-word; }
-  @media (max-width: 500px) {
-    .app-card { flex: 1 1 100%; }
-    .toc ul { padding-left: 18px; }
-  }
-</style>
-
-<!-- No external tracking, just clean structure -->
+<script>
+  // ensure responsive behavior and no horizontal overflow
+  document.querySelectorAll('img').forEach(img => {
+    img.setAttribute('loading', 'lazy');
+  });
+  // smooth anchor
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if(target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
 </body>
 </html>
